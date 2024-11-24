@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <!--This is the home page of the website-->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Bootstap 5 CSS Package -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <title>Visit Houston</title>
+   
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <!-- Visit Houston Logo -->
+        <a class="navbar-brand" href="#">
+          <img class="d-inline-block align-top" src="/Visit-Houston-Website/assets/visit-houston-logo.png" alt="Visit Houston Logo" width="130" height="50"/>
+        </a>
+        <!--Navbar Link Toggler -->
+        <button
+         class="navbar-toggler" 
+         type="button" 
+         data-bs-toggle="collapse" 
+         data-bs-target="#navbarSupportedContent" 
+         aria-controls="navbarSupportedContent" 
+         aria-expanded="false" 
+         aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <!-- Nagivation bar buttons-->
+          <ul class="navbar-nav mr-auto">
+            <!-- Home Page -->
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <!--Attractions-->
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Attractions</a>
+            </li>
+
+            <!--Food and Drink-->
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Food and Drink</a>
+            </li>
+            <!--History -->
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">History</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
