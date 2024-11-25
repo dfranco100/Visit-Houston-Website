@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<title>My Personal Webpage</title>
+	<style type = "text/css">
+		h2 {font-family: sans-serif;
+			color:blue}
+		h3 {color: skyblue}
+		ul {background-image: url(trophy.jpg);
+			background-position: bottom right;
+			background-size: 100px 100px;
+			background-repeat: no-repeat;}
+		li {text-decoration: underline;
+			color: goldenrod}
+		p {font-family: sans-serif;}	
+		div {
+			width: 600px;
+			border: 20px solid lightblue;
+			padding: 10px;
+		}
+		@media only screen and (min-width: 600px) {
+			body{
+				background-color: gray;
+			}
+		}
+		@media only screen and (min-width: 1200px) {
+			body{
+				background-color: white;
+			}
+		}
+	</style>
+
+	<script>
+	 document.addEventListener("DOMContentLoaded", function(){
+	  function displayDateTime() {
+		document.getElementById("datetime").innerText = new Date().toLocaleString();
+	  }
+	  displayDateTime(); // Call on page load
+	  setInterval(displayDateTime, 1000); // Update every second
+	});
+	</script>
+	</head>
+
+	<body>
+	<h1>Welcome to my Webpage!</h1>
+	<h2>David Franco</h2>
+	<p id="datetime"></p>
+	<div>
+	<p>I am 24 years old and although I was born in North Carolina, I grew up in Houston. 
+		 I am a senior at <a href = "https://www.uhd.edu">The University of Houston - Downtown</a> 
+		 studying computer science. This webpage is part of a project to develop my skills in web programming.
+		 Once I graduate I hope to work as a junior software engineer and possibly continue my education with
+		 a masters degree in artificial intelligence. Outside of my academic career I enjoy traveling and
+		 watching soccer with my friends. I also love going to music concerts and trying new activities.
+		 One of my recent trips was to Japan in December of 2023, when I went to spend the holidays with 
+		  my sister and her husband who were living in Japan at the time. This was my first time taking
+		  an international trip and this was a destination I had always wanted to visit. I hope to visit
+		  again someday as I had an incredible experience and got to share it with my family. One of my favorite hobbies
+		  is watching the English premier league, which is a domestic soccer league. My favorite team is
+		   Manchester City F.C. and I hope to one day travel to Manchester to watch a game at the famous Etihad Stadium.  </p>	
+	</div>	   
+	<h3>My Experience with Different Programming Languages</h3>
+	<table border = "1">
+		<title>My Programming Experience</title>
+		<tr>
+			<th>Language</th>
+			<th>Experience Level</th>
+		</tr>
+		<tr>
+			<td>Java</td>
+			<td>Advanced</td>
+		</tr>
+		<tr>
+			<td>Python</td>
+			<td>Intermediate</td>
+		</tr>
+		<tr>
+			<td>C++</td>
+			<td>Advanced</td>
+		</tr>
+		<tr>
+			<td>C#</td>
+			<td>Beginner</td>
+		</tr>
+		<tr>
+			<td>HTML</td>
+			<td>Advanced</td>
+		</tr>
+		<tr>
+			<td>CSS</td>
+			<td>Advanced</td>
+		</tr>
+		<tr>
+			<td>JavaScript</td>
+			<td>Advanced</td>
+		</tr>
+	</table>
+
+	<h3>Some of Manchester City's Recent Accomplishments Include:</h3>
+	<ul><title>Manchester City Recent Awards</title>
+		<li>2023-2024 English Premier League Champions</li>
+		<li>2023 English FA Cup Winners</li>
+		<li>2023 UEFA Super Cup Winners</li>
+		<li>2023 FIFA Club World Cup Winners</li>
+		<li>2023 FIFA Men's Club of the Year Award</li>
+		<li>2023 FIFA Men's Coach of the Year - Pep Guardiola</li>
+	</ul>
+
+	<img src = "Etihad.png" alt = "Etihad Stadium" width = "300" height = "300" >
+	</body>
+</html>
