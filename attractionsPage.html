@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Author: David Franco -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstap 5 CSS Package -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="/css/attractionsPage.css">
+    <title>Attractions</title>
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <!-- Visit Houston Logo -->
+        <a class="navbar-brand" href="#">
+          <img class="d-inline-block align-top" src="assets/visit-houston-logo.png" alt="Visit Houston Logo" width="130" height="50"/>
+        </a>
+        <!--Navbar Link Toggler -->
+        <button
+         class="navbar-toggler" 
+         type="button" 
+         data-bs-toggle="collapse" 
+         data-bs-target="#navbarSupportedContent" 
+         aria-controls="navbarSupportedContent" 
+         aria-expanded="false" 
+         aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <!-- Nagivation bar buttons-->
+          <ul class="navbar-nav mr-auto">
+            <!-- Home Page -->
+            <li class="nav-item active">
+              <a class="nav-link active" href="/homepage.html">Home</a>
+            </li>
+            <!--Attractions-->
+            <li class="nav-item active">
+              <a class="nav-link active" href="/attractionsPage.html">Attractions</a>
+            </li>
+
+            <!--Food and Drink-->
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Food and Drink</a>
+            </li>
+            <!--History -->
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">History</a>
+            </li>
+          </ul>
+        </div>
+     </nav>
+
+      <!--Landing Image and Text-->
+      <div class="image-container">
+        <img src="/assets/Houston-Skyline.jpg" alt="housto skyline">
+        <div class="overlay-text">Attractions in Houston</div>
+      </div>
+
+      <!--Attractions Grid-->
+      <div class="attractions-container">
+        <!-- Attraction 1: Houston Museum of Natural Science-->
+        <div class="attraction">
+          <img src="/assets/museum.jpg" alt="Science Museum Photo">
+          <div class="attraction-content">
+            <a href="https://www.hmns.org/" class="attraction-title">Houston Museum of Natural Science</a>
+            <p class="attraction-description">
+                A visit to the Houston Museum of Natural Science offers students, families, and visitors 
+                the opportunity to experience the wonders and delights of science—by exploring tropical rainforests
+                and worlds galaxies away, traveling back in time to when dinosaurs walked the earth, and blasting forward
+                to the future of renewable energy
+            </p>
+            <a href="https://houmuse.org/" class="attraction-link">Explore the Museum District</a>
+          </div>
+        </div>
+      </div>  
+    
+        <!-- Attraction 2: Minute Maid Park -->
+        <div class="attraction">
+          <img src="/assets/minute-maid-park.jpg" alt="Minute Maid Baseball Stadium">
+          <div class="attraction-content">
+            <a href="https://www.mlb.com/astros/tickets" class="attraction-title">Minute Maid Park: Home of the Houston Astros!</a>
+            <p class="attraction-description">
+                Minute Maid Park, located in the heart of Downtown Houston, is a landmark of both sports and city pride.
+                Home to the Houston Astros, this state-of-the-art ballpark seamlessly blends modern amenities with classic design.
+                Beyond baseball, Minute Maid Park hosts concerts, events, and community gatherings, serving as a vibrant hub of entertainment
+                and a symbol of Houston's love for sports and culture
+            </p>
+            <a href="https://www.mlb.com/astros/tickets/events" class="attraction-link">Upcoming Events at Minute Maid Park</a>
+          </div>
+        </div>
+    
+        <!-- Attraction 3: Discovery Green -->
+        <div class="attraction">
+          <img src="/assets/discovery-green.jpg" alt="Arial view of Discovery green park">
+          <div class="attraction-content">
+            <a href="https://www.discoverygreen.com/" class="attraction-title">Discovery Green</a>
+            <p class="attraction-description">
+                Discovery Green, a 12-acre park located in downtown Houston, is designed as an engaging and active place
+                with programming to serve all ages and backgrounds, as well as workers, residents, and visitors alike.
+                Prominent features visitors can enjoy include a one-acre lake, children’s playground, interactive water features,
+                amphitheater stage and slope, small and large dog runs, public art works, HPL (Houston Public Library) Express,
+                open lawns, and great restaurants!
+            </p>
+            <a href="https://www.discoverygreen.com/" class="attraction-link">Learn More</a>
+          </div>
+        </div>
+    
+        <!-- Attraction 4: Houston Zoo -->
+        <div class="attraction">
+          <img src="/assets/houston-zoo.jpg" alt="Arial view of zoo exhibit">
+          <div class="attraction-content">
+            <a href="https://www.houstonzoo.org/" class="attraction-title">Houston Zoo</a>
+            <p class="attraction-description">
+                Spanning 55 acres in Hermann Park, the Houston Zoo is home to nearly 600 species and more than 6,000 animals,
+                 providing the highest standard in animal care. The Zoo invites visitors to journey around the world from the
+                Galápagos Islands to South America’s Pantanal to the African Forest and beyond. Fun, informative experiences
+                at the Zoo connect communities with animals, supporting the Zoo’s mission to save animals in the wild.
+            </p>
+            <a href="https://www.houstonzoo.org/explore/exhibits/" class="attraction-link">Explore Exhibits</a>
+          </div>
+        </div>
+
+
+      <!--BootStap JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
