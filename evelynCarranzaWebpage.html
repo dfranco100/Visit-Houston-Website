@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+		font-family: Verdana, sans-serif;
+		background-color: #f4f4f4;
+		margin: 0;
+		padding: 20px;
+		color: brown; 
+		background-image: url('/assets/hearts.gif'); /* Add the background image */
+		background-size: cover; /* Makes the background cover the entire page */
+		background-repeat: no-repeat; /* Prevents the image from repeating */
+		background-attachment: fixed; /* Ensures the background stays fixed when scrolling */
+        }
+div
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: circle;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1.5px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>♡ Hi! Welcome to Evelyn Carranza's webpage! ♡</h1>
+    <p>♡ This is a simple webpage that includes a list of my favorite songs (at the moment) and a table showing my workout schedule!! ♡ </p>
+
+         <img src = "/assets/snoopyyy.jpg" width = "300"
+            alt = "picture of snoopy">
+
+		<p> Hi! My name is Evelyn Carranza, I am a Senior at UHD and a computer science major. My expected date to graduate is this upcoming spring. I did not start off as a computer science major at UHD. My first plan was to graduate with a Biology degree and go to physical therapy school but during my pre-requisites, I decided that the medical field wasn’t for me. Computer Science was my backup plan if I decided to no longer pursue biology. The reason for that was because I had experience in coding and robotics during high school and I had fun learning about that.
+
+During my free time I like to go to concerts, discover new music, try new food places, spend time in nature with either myself, friends or family. I also have been trying to discover new hobbies like crocheting, maybe give running a chance or creating jewelry as well as pottery. I have tried painting and drawing but I was not born with that talent. A couple of months back, I gave the wrestling club a try and really enjoyed it. It was really hard in the beginning since I have never been in sports before and had been engaging muscles that I have never engaged before, but it was fun. This semester I’m still trying to decide whether I want to go for fun or go and compete for UHD. 
+</p>
+
+<p> ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ </p>
+
+
+
+    <h2> 🎶🎵 My Favorite Songs at the moment!🎵🎶 </h2>
+    <ul id="song-list"> 
+
+        <li>Go Away - Omar Apollo</li>
+        <li>Earrings - Malcolm Todd</li>
+        <li>Out of Time - The Weeknd</li>
+        <li>Losing you - Christian Kuria</li>
+        <li>Endlessly - Omar Apollo</li>
+	<li> Explicame - Leanys </li>
+	<li> 3 Boys - Omar Apollo</li>
+	<li> FERXOO 30 - Feid </li>
+	<li> Pick Up Your Phone - Hojean</li>
+
+    </ul>
+
+    <button onclick="addSong()">Add a Favorite Song</button>
+
+
+    <h2>♡ My Weekly Workout Schedule! ♡</h2>
+    <table>
+        <thead>
+            <tr>
+                <th> Day of the Week </th>
+                <th> Workout </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Glutes & Hamstrings, Cardio</td>
+
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Back & Biceps, Abs/Core, Cardio</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Quads & Calves, Cardio </td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Chest, Triceps, & Shoulders, Cardio</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Glutes & Hamstrings, Cardio</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Rest Day, Active Walking</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Rest Day, Active Walking</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function addSong() {
+            // Prompt the user for the song title and artist
+            const songTitle = prompt("Enter the song title:");
+            const songArtist = prompt("Enter the artist's name:");
+
+            // Check if both inputs are provided
+            if (songTitle && songArtist) {
+                // Create a new list item with the song title and artist
+                const newSong = document.createElement("li");
+                newSong.textContent = `${songTitle} - ${songArtist}`;
+
+                // Append it to the song list
+                document.getElementById("song-list").appendChild(newSong);
+
+                // Display a success message
+                alert("Your new favorite song has been added!");
+            } else {
+                alert("Please enter both a song title and artist to add a song.");
+            }
+        }
+    </script>
+
+
+
+	<h2 style="font-family:verdana;">Here is my favorite site! </h2>
+
+	<li><a href="http://www.pinterest.com" style="font-family: Verdana;">Pinterest ♡ </a></li>
+
+
+    <p> ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡</p>
+
+
+</body>
+</html>
