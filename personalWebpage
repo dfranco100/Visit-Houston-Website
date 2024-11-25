@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.2: heading.html -->
+<!-- Heading elements h1 through h6. -->
+<html>
+<style>
+  body {
+    font-family: 'Verdana', sans-serif;
+  }
+</style>
+   <head>
+      <meta charset = "utf-8">
+      <title>Nellie's webpage</title>
+   </head>
+
+   <body>
+	<body style="color:DodgerBlue;" style="background-color:lightsteelblue;">
+      	<h1 style="font-family:verdana;", >☆ Welcomeee!! Nellie Carranza's webpage ☆</h1>
+	<h2 style="font-family:verdana;">☆ Today's Date: October 1, 2024 ☆</h2>
+   </body>
+
+</html>
+   <style>
+    body {
+         background-image: url('fallingbluestars.gif');
+	 background-repeat: repeat;
+	}
+   </style>
+</html>
+
+
+   <body>
+      <p> 
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</p>
+      <p style="font-family:verdana;">My name is Nellie Carranza and I’m currently a senior majoring in Computer Science. I’ve been learning the basic levels of coding over the last few years, specifically C++, Python and some Java. This is the first time I take a class that has to do with programming a webpage. I’m excited to learn new skills that can be used in my near future. Outside of school I have a few hobbies that help when I’m feeling stressed or nervous. One of my hobbies is crocheting, I find it interesting, fun and relaxing on how I’m able to take some yarn and create something out of it. I’ve learned how to make several things, such as bags, pouches and sweaters. In addition, I enjoy working out on the day-to-day basis. Staying active also helps me clear my head and release some stress I may holding within my person. It helps me stay focused and relaxed throughout the day. Another activity that I like to part take in is hanging out and spending time with friends. An activity that we like to do is exploring new places and trying new restaurants and foods. I really enjoy friends’ company and having support care from them truly means a lot to me. </p>
+   </body>
+</html>
+
+<!--
+   </body>
+</html>
+
+<!-- Fig. 2.10: links2.html -->
+<!-- Unordered list containing hyperlinks. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Links</title>
+   </head>
+
+   <body>
+      <h3 style="font-family:verdana;">My favorite site (linked below):</h3>
+
+      <!-- create an unordered list -->
+      <ul>
+         <!-- the list contains four list items -->
+         <li><a href = "http://www.pinterest.com">Pinterest</a></li>
+       </ul>
+   </body>
+</html>
+   <body>
+      <p>
+         <img src = "snoopygif.gif"
+            alt = "Snoopy">        
+        
+      </p>
+   </body>
+</html>
+
+<p> ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</p>
+
+<body style="font-family:verdana;">
+      <!-- the <table> tag opens a table -->
+      <table border = "1">
+
+         <!-- the <caption> tag summarizes the table's -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong>Table of Places I want to Visit and 
+		    Their Average Prices</strong></caption>
+
+         <!-- the <thead> section appears first in the table -->
+         <!-- it formats the table header area -->
+         <thead>
+            <tr> <!-- <tr> inserts a table row -->
+               <th>Place</th> <!-- insert a heading cell -->
+               <th>Average Price for 1 Week</th>
+            </tr>
+         </thead>
+
+         <!-- the <tfoot> section appears last in the table -->
+         <!-- it formats the table footer -->
+      
+
+         <!-- all table content is enclosed -->
+         <!-- within the <tbody> -->
+         <tbody>
+            <tr>
+               <td>Italy</td> <!-- insert a data cell -->
+               <td>$3k-6k</td>
+            </tr>
+            <tr>
+               <td>Spain</td>
+               <td>$1.2k-2.5k</td>
+            </tr>
+            <tr>
+               <td>France</td>
+               <td>$1.8k-3.7k</td>
+            </tr>
+            <tr>
+               <td>Japan</td>
+               <td>$1k-2.5k</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html> 
+
+<p> ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</p>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title  style="font-family:verdana;">Forms</title>
+   </head>
+
+   <body>
+      <h2 style="font-family:verdana;">Feedback Form</h2>
+
+      <p style="font-family:verdana;">Please feel free to add any comments for the website or for any music suggestions</p>
+
+      <!-- this tag starts the form, gives the -->
+      <!-- method of sending information and the -->
+      <!-- location of the form-processing script -->
+      <form method = "post" action = "http://www.deitel.com">
+         <!-- hidden inputs contain non-visual -->
+         <!-- information that will also be submitted -->
+         <input type = "hidden" name = "recipient"
+            value = "deitel@deitel.com">
+         <input type = "hidden" name = "subject" 
+            value = "Feedback Form">
+         <input type = "hidden" name = "redirect" 
+            value = "main.html"> 
+
+         <!-- <input type = "text"> inserts a text field -->
+         <p style="font-family:verdana;"><label>Comments/Music Suggestions:
+               <input name = "name" type = "text" size = "50"
+                  maxlength = "80">
+            </label></p>
+  
+         <p style="font-family:verdana;">
+            <!-- input types "submit" and "reset" insert -->
+            <!-- buttons for submitting and clearing the -->
+            <!-- form's contents, respectively -->
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>   
+      </form>
+   </body>
+</html>
+
+
+<p> ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</p>
+
+<html>
+<head>
+<style>
+div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<h2 style="font-family:verdana;"> Thank you for visiting!</h2>
+
+<div style="font-family:verdana;">This is box model, the holidays are upon us  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<!-- Fig. 13.7: submitreset.html -->
+<!-- Demonstrating the submit and reset events. -->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>A Form Using focus and blur</title>
+      <link rel = "stylesheet" type = "text/css" href = "style.css">
+      <script src = "submitreset.js"></script>
+   </head>
+   <body>
+      <form id = "myForm" action = "">
+         <p><label class = "fixed" for = "name">Name:</label>
+            <input type = "text" id =  "name" 
+               placeholder = "Enter name"></p>
+         <p><label class = "fixed" for = "email">E-mail:</label>
+            <input type = "email" id = "email" 
+               placeholder = "Enter e-mail address"></p>
+         <p><label>Click here if you like this site 
+            <input type = "checkbox" id =  "like"></label></p>
+         <p><label for = "comments">Any comments?</p>
+         <textarea id =  "comments" 
+            placeholder = "Enter comments here"></textarea>
+         <p><input id = "submit" type = "submit"> 
+            <input id = "reset" type = "reset"></p>
+      </form>
+      <div id = "helpText"></div>
+   </body>
+</html>
+
+
+<!--
 
