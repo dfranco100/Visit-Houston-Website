@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 header {
-    background: url('houstonsunset.gif') no-repeat center center/cover;
+    background: url('/assets/houstonsunset.gif') no-repeat center center/cover;
     color: white;
     height: 80vh;
     display: flex;
