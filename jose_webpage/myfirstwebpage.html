@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('backgroundimage.jpeg');
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+  padding: 10px;
+  border: 10px solid teal;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+</style>
+
+<script>
+// JavaScript to display a thank-you message when the form is submitted
+function submitForm(event) {
+  event.preventDefault(); // Prevent form from actually submitting
+  const name = document.getElementById("name").value;
+  alert("Thank you, " + name + ", for reaching out!");
+}
+</script>
+
+</head>
+<body>
+
+<h1 style="color: teal;">Jose's webpage!!!!!!!</h1>
+
+<h2 style="color: gray;"><strong>Image</strong></h2>
+
+<div class="image-container">
+  <img src="pingu.jpg" alt="Pingu" width="200" height="200">
+</div>
+
+<h2 style="color: gray;"><strong>Link</strong></h2>
+<p>Here's my favorite site:</p>
+<p><a href="https://www.youtube.com">YouTube</a></p>
+
+<h2 style="color: gray;"><strong>Introduction</strong></h2>
+<p>My name is Jose Salas, and I am currently in my final year at the University of Houston-Downtown (UHD), majoring in computer science. My fascination with technology began from the moment I was first introduced to it. I've always been curious about how things work, and this curiosity naturally led me to pursue a degree in computer science. I am passionate about both the software and hardware aspects of computers, and I find immense satisfaction in understanding and working with them.</p>
+
+<p>Outside of my academic pursuits, I enjoy spending my free time on creative activities like painting and working with polymer clay. These hobbies provide a nice balance to my technical studies, allowing me to explore and express creativity in a different way. Additionally, I love being outdoors and often take the opportunity to go biking, which helps me relax and stay active. Balancing my passion for technology with creative and outdoor activities has made my journey through university both fulfilling and enjoyable. I'm excited to see what the future holds as I move closer to graduation.</p>
+
+<p><strong>List</strong></p>
+<p>The following are programming languages I have worked with:</p>
+<ul>
+  <li>C++</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>HTML</li>
+  <li>SQL</li> 
+  <li>Scheme</li>
+  <li>SML</li>
+</ul>
+
+<p><strong>Form</strong></p>
+<p>Have any questions for me? Fill out the form below and get in contact!</p>
+<form onsubmit="submitForm(event)">
+  <p><label>Name:
+    <input id="name" name="name" type="text" size="25" maxlength="30">
+  </label></p>
+
+  <p><label>Questions/Comments:</label></p>
+  <textarea name="comments" rows="5" cols="50" placeholder="Questions/Comments"></textarea>
+
+  <p>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+  </p>
+</form>
+
+</body>
+</html>
