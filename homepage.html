@@ -3,24 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Import Stylesheet-->
-    <link rel="stylesheet" href="/css/homepage.css">
     <title>Visit Houston</title>
-    
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: url('houstonsunset.gif') no-repeat center center/cover;
+            color: white;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        #content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Houston!</h1>
-        <p>Your ultimate guide to attractions, dining, and history of Nasa city!</p>
+        <p>Your ultimate guide to attractions, dining, and history of NASA city!</p>
         <nav>
             <a href="#" onclick="showSection('home')">Home 🏠︎</a>
             <a href="#" onclick="showSection('attractions')">Attractions 🗓</a>
             <a href="#" onclick="showSection('cuisine')">Local Cuisine 𓎩</a>
             <a href="#" onclick="showSection('history')">History 🕮</a>
+            <a href="#" onclick="showSection('team')">Meet the Team 👥</a>
         </nav>
     </header>
     
-    <!-- Content section -->
     <div id="content">
         <h2>Explore Houston</h2>
         <p>Click on the tabs above to learn about attractions, local cuisine, and the history of Houston!</p>
@@ -42,11 +96,21 @@
             `,
             cuisine: `
                 <h2>Local Cuisine & Restaurant Recommendations</h2>
-                <p>Information about local cuisine will be updated soon!</p>
+                <p>Explore Houston's diverse and delicious food scene.</p>
             `,
             history: `
                 <h2>History of Houston</h2>
                 <p>Information about Houston's history will be updated soon!</p>
+            `,
+            team: `
+                <h2>Meet the Team</h2>
+                <ul>
+        <li><strong>Evelyn</strong>: <a href="homework5.html" target="_blank">View Evelyn's Page</a></li>
+                    <li><strong>Nellie</strong></li>
+                    <li><strong>Jose</strong></li>
+                    <li><strong>David</strong></li>
+                </ul>
+                <p>Learn more about our talented team!</p>
             `
         };
 
